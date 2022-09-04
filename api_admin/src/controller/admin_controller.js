@@ -70,21 +70,21 @@ export const deleteUser = async(req,res) => {
     }
 }
 
-export const login = async (req, res) => {
-    try {
-        const {
-            email,
-            password
-        } = req.body
-        const loggedin = await getUserService.byEmailAndPassword(
-            email,
-            password
-        )
-        // await client.set(email, loggedin)
+// export const login = async (req, res) => {
+//     try {
+//         const {
+//             email,
+//             password
+//         } = req.body
+//         const loggedin = await getUserService.byEmailAndPassword(
+//             email,
+//             password
+//         )
+//         // await client.set(email, loggedin)
        
-        res.status(200).json(loggedin)
-    }
-    catch (e) {
-        res.status(500).json(e)
-    }
-}
+//         res.status(200).json(loggedin)
+//     }
+//     catch (e) {
+//         res.status(500).json(e)
+//     }
+// }

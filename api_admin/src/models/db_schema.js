@@ -5,5 +5,5 @@ const salt = bcrypt.genSaltSync(10);
 export const UserSchema = mongoose.model('user', new mongoose.Schema({
     name: String,
     email: String,
-    password: String
+    password: String,
 }))
