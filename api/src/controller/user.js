@@ -41,14 +41,13 @@ export const createUser = async (req, res) => {
 
 export const updateUser = async(req,res) => {
     try {
+        console.log("hm..")
         const {
             name,
             email,
             password
         } = req.body
-        console.log({
-            id: req.params.id
-        })
+        // console.log()
         let result = await putUserService.byId(req.params.id, {
             name,
             email,
