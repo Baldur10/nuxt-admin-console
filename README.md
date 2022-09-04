@@ -1,5 +1,5 @@
 # CRUD Admin Portal
-
+Nuxt based MEVN Web App for an admin console
 # Requirements
 1. Node, NPM
 2. Docker
